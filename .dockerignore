@@ -3,5 +3,6 @@
 
 # Allow files and directories
 !/src/**
+!/public/**
 !/package.json
 !/package-lock.json
