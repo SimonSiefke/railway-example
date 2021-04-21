@@ -2,10 +2,8 @@
   "name": "railway-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "main": "src/server.js",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "MIT",
