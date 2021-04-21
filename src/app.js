@@ -1,13 +1,13 @@
 import express from 'express'
+import path from 'path'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 
-app.get('/', (req, res) => {
-  // const date = new Date().toString()
-  // res.set('Cache-Control', 'public, max-age=31536000')
-  res.status(200)
-  res.send('hello world')
-})
+app.use(express.static(path.join(__dirname, '../public')))
 
 app.use((req, res, next) => {
   res.status(404)
