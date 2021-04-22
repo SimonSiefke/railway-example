@@ -9,4 +9,6 @@ RUN npm ci --prod
 COPY src ./src
 COPY public ./public
 
+USER node
+
 CMD [ "node", "src/server.js" ]
